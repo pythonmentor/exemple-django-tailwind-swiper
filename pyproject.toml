@@ -1,0 +1,20 @@
+[project]
+name = "new-tailwind-with-swiper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argon2-cffi>=23.1.0",
+    "crispy-tailwind>=1.0.3",
+    "django-debug-toolbar>=5.0.1",
+    "django-environ>=0.12.0",
+    "django-extensions>=3.2.3",
+    "django-vite>=3.0.6",
+    "wagtail>=6.4",
+]
+
+[dependency-groups]
+dev = [
+    "django-browser-reload>=1.17.0",
+]

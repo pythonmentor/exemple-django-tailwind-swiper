@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto">
+    <h1 class="text-4xl font-bold mb-4">Exemple avec Tailwind 4 et Swiper.js</h1>
+    <div class="mb-4">
+        <button class="p-4 btn btn-primary rounded-lg">Bouton primary</button>
+    </div>
+    <div>
+        <!-- Swiper Container -->
+        <div class="w-full h-80">
+            <div class="swiper relative w-full h-full">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide flex items-center justify-center bg-red-900 text-white text-3xl font-bold">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p>Slide 1</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center bg-red-700 text-white text-3xl font-bold">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p>Slide 2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center bg-red-900 text-white text-3xl font-bold">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p>Slide 3</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center bg-red-700 text-white text-3xl font-bold">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p>Slide 4</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center bg-red-900 text-white text-3xl font-bold">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p>Slide 5</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center bg-red-700 text-white text-3xl font-bold">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p>Slide 6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}
