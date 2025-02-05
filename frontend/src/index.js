@@ -3,6 +3,11 @@ import "vite/modulepreload-polyfill";
 // Entry point for CSS styles
 import "./styles/app.css";
 
+// Config of Alpine.js
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()
+
 // Example with a swiper slider
 import Swiper from "swiper/bundle";
 // Swiper styles
@@ -22,14 +27,14 @@ export const swiper = new Swiper(".swiper", {
   breakpoints: {
     // when window width is >= 992px
     992: {
-      speed: 2000,
+      speed: 1500,
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,
     },
     // when window width is >= 1200px
     1200: {
-      speed: 3000,
+      speed: 2000,
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 40,
